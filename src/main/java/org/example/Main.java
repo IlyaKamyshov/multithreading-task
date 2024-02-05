@@ -51,6 +51,7 @@ public class Main {
         System.out.println("Максимальный интервал значений среди всех строк: " + max);
         long endTs = System.currentTimeMillis(); // end time
         System.out.println("Time: " + (endTs - startTs) + "ms");
+        threadPool.shutdown();
     }
 
     public static String generateText(String letters, int length) {
